@@ -71,3 +71,28 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+Never ignore DLLs in the FMOD subfolder.
+!DivineDiner/[Aa]ssets/Plugins/FMOD//lib/*
+
+Don't ignore images and gizmos used by FMOD in the Unity Editor.
+!DivineDiner/[Aa]ssets/Gizmos/FMOD/*
+!DivineDiner/[Aa]ssets/Editor Default Resources/FMOD/*
+
+Ignore the Cache-file since it is updated locally either way
+DivineDiner/[Aa]ssets//FMODStudioCache.asset
+DivineDiner/[Aa]ssets/*/FMODStudioCache.asset.meta
+DivineDiner/[Aa]ssets/Plugins/FMOD/Cache/
+DivineDiner/[Aa]ssets/Plugins/FMOD/Cache.meta
+DivineDiner/[Aa]ssets/Plugins/FMOD/Cache/Editor.meta
+
+Log-files
+fmod.log
+fmod_editor.log
+
+FMOD 1.10.x (Legacy)
+DivineDiner/Assets/FMODAssets/*
+DivineDiner/Assets/FMODStudioCache.meta
+DivineDiner/DivineDiner/DivineDinerFMOD/.cache
+DivineDiner/DivineDiner/DivineDinerFMOD/.unsaved
+DivineDiner/DivineDiner/DivineDinerFMOD/.user
