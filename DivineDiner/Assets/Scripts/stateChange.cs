@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class stateChange : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class stateChange : MonoBehaviour
     };
 
     satisfactionLevel state = satisfactionLevel.Low;
+    public RawImage meter;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
